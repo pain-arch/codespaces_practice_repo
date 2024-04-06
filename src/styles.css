@@ -4,9 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 html,
 body {
@@ -16,6 +14,11 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+}
+
+/* add a smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
 
 div#main {
@@ -126,4 +129,14 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+/* add a slide In Left animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
